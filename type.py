@@ -1,10 +1,10 @@
 import pyautogui
 import time 
 
-name = 'Devonte Leondard'
-address = '236 Thunder Rd'
-zipcode = '27804'
-city = 'Rocky Mount'
+name = 'first last'
+address = 'num nameofstreet Rd'
+zipcode = '99999'
+city = 'cityburg'
 phone = '9192599610'
 weight = '5'
 ticket = 'SR2774650'
