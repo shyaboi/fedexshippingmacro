@@ -1,15 +1,22 @@
 import pyautogui
 import time 
+import re
 
-name = 'firstname lastname'
-address = 'num streetname dr, apt 412'
-zipcode = '99999'
+name = 'Shemeka Johnson'
+address = '1081 Tavern Run Road'
+zipcode = '22469'
 # city = 'Houston'
-phone = '5555555555'
-weight = '20'
-ticket = 'HUM/SR55555555'
-email = 'email@email.com'
+phoneMessy = '8042464202'
+weight = '5'
+ticket = 'WLC/SR2756139'
+email = 'shemekawest28@gmail.com'
 
+
+
+
+
+
+phone = re.sub('[^A-Za-z0-9]+', '', phoneMessy)
 
 def down():
     pyautogui.hotkey('tab')
@@ -46,7 +53,7 @@ for _ in range(2):
 time.sleep(1)
 pyautogui.write(phone)
 
-time.sleep(.5)
+time.sleep(1)
 
 for _ in range(26):
     down()
@@ -99,15 +106,18 @@ pyautogui.hotkey('space')
 down()
 pyautogui.hotkey('space')
 
-for _ in range(14):
-    down()
+# for _ in range(14):
+#     down()
 
-pyautogui.hotkey('enter')
+input("Press Enter to continue...")
+pyautogui.hotkey('alt', 'tab')
 
-time.sleep(4)
+# pyautogui.hotkey('enter')
 
-for _ in range(65):
-    down()
+time.sleep(2)
+
+# for _ in range(65):
+#     down()
 
 pyautogui.write(weight) 
 
@@ -116,18 +126,17 @@ down()
 down()
 
 pyautogui.hotkey('enter')
-pyautogui.press('up')
-pyautogui.press('up')
-pyautogui.press('up')
-pyautogui.press('up')
-pyautogui.press('up')
+
+for _ in range(5):
+    pyautogui.press('up')
+
 pyautogui.hotkey('enter')
 
 
 
 down()
 
-time.sleep(.2)
+time.sleep(.6)
 pyautogui.press('down')
 pyautogui.press('down')
 pyautogui.press('down')
@@ -139,35 +148,44 @@ for _ in range(12):
 
 pyautogui.write(ticket)
 
-for _ in range(8):
-    down()
 
-pyautogui.hotkey('enter')
+# for _ in range(8):
+#     down()
 
-time.sleep(.2)
+# pyautogui.hotkey('enter')
 
-for _ in range(4):
-    down()
+# time.sleep(.6)
 
-pyautogui.press('down')
-pyautogui.press('down')
+# for _ in range(4):
+#     down()
 
-for _ in range(15):
+# pyautogui.press('down')
+# pyautogui.press('down')
+
+for _ in range(21):
     down()
 
 pyautogui.write(email)
 
-for _ in range(20):
+for _ in range(4):
     down()
+pyautogui.hotkey('space')
+down()
+pyautogui.hotkey('space')
+down()
+pyautogui.hotkey('space')
+down()
+# for _ in range(20):
+#     down()
 
-pyautogui.hotkey('enter')
+# pyautogui.hotkey('enter')
 
 
-time.sleep(4)
+# time.sleep(4)
 
-for _ in range(20):
-    down()
-pyautogui.press('space')
+# for _ in range(20):
+#     down()
+# pyautogui.press('space')
 
 # for _ in range(4):
 #     down()
