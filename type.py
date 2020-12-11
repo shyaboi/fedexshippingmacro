@@ -2,14 +2,14 @@ import pyautogui
 import time 
 import re
 
-name = 'Shemeka Johnson'
-address = '1081 Tavern Run Road'
-zipcode = '22469'
+name = 'first last'
+address = 'num streetname rd'
+zipcode = '99999'
 # city = 'Houston'
-phoneMessy = '8042464202'
+phoneMessy = '5555555555'
 weight = '5'
-ticket = 'WLC/SR2756139'
-email = 'shemekawest28@gmail.com'
+ticket = 'WLC/SR555555'
+email = 'email@email.com'
 
 
 
