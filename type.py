@@ -8,7 +8,7 @@ city = 'cityburg'
 phone = '9192599610'
 weight = '5'
 ticket = 'SR2774650'
-email = 'drleonard92@gmail.com'
+email = 'email@email.com'
 
 
 def down():
