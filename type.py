@@ -3,7 +3,7 @@ import time
 import re
 
 name = 'first last'
-address = 'num streetname rd'
+address = '123 fake st'
 zipcode = '99999'
 # city = 'Houston'
 phoneMessy = '5555555555'
@@ -50,10 +50,10 @@ down()
 for _ in range(2):
     down()
 
-time.sleep(1)
+time.sleep(.6)
 pyautogui.write(phone)
 
-time.sleep(1)
+time.sleep(.6)
 
 for _ in range(26):
     down()
@@ -114,7 +114,7 @@ pyautogui.hotkey('alt', 'tab')
 
 # pyautogui.hotkey('enter')
 
-time.sleep(2)
+# time.sleep(1)
 
 # for _ in range(65):
 #     down()
