@@ -1,14 +1,14 @@
 import pyautogui
 import time 
 
-name = 'Celeste Larsen'
-address = '13725 cambury dr apt 412'
-zipcode = '77014'
-city = 'Houston'
-phone = '2542692958'
+name = 'firstname lastname'
+address = 'num streetname dr, apt 412'
+zipcode = '99999'
+# city = 'Houston'
+phone = '5555555555'
 weight = '20'
-ticket = 'HUM/SR2764272'
-email = 'Celestelarsen12@gmail.com'
+ticket = 'HUM/SR55555555'
+email = 'email@email.com'
 
 
 def down():
