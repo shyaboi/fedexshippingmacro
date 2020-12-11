@@ -1,14 +1,14 @@
 import pyautogui
 import time 
 
-name = 'first last'
-address = 'num nameofstreet Rd'
-zipcode = '99999'
-city = 'cityburg'
-phone = '9192599610'
-weight = '5'
-ticket = 'SR2774650'
-email = 'drleonard92@gmail.com'
+name = 'Celeste Larsen'
+address = '13725 cambury dr apt 412'
+zipcode = '77014'
+city = 'Houston'
+phone = '2542692958'
+weight = '20'
+ticket = 'HUM/SR2764272'
+email = 'Celestelarsen12@gmail.com'
 
 
 def down():
@@ -32,17 +32,21 @@ for _ in range(2):
 pyautogui.write(zipcode) 
 down()
 
-time.sleep(.4)
-pyautogui.write(city[0])
-time.sleep(.4)
-pyautogui.press('down')
-time.sleep(.4)
-pyautogui.press('return')
+# time.sleep(.4)
+# pyautogui.write(f'{city[0]}{city[1]}')
 
-for _ in range(3):
+# time.sleep(.4)
+# pyautogui.press('down')
+# time.sleep(.4)
+# pyautogui.press('return')
+
+for _ in range(2):
     down()
 
+time.sleep(1)
 pyautogui.write(phone)
+
+time.sleep(.5)
 
 for _ in range(26):
     down()
@@ -160,11 +164,12 @@ pyautogui.hotkey('enter')
 
 
 time.sleep(4)
+
 for _ in range(20):
     down()
 pyautogui.press('space')
 
-for _ in range(4):
-    down()
+# for _ in range(4):
+#     down()
 
-pyautogui.hotkey('enter')
+# pyautogui.hotkey('enter')
