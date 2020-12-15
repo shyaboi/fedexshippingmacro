@@ -15,7 +15,6 @@ email = 'email@email.com'
 
 
 
-
 phone = re.sub('[^A-Za-z0-9]+', '', phoneMessy)
 
 def down():

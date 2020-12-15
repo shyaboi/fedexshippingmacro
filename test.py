@@ -1,7 +1,17 @@
+from address_parser import Parser
 import re
+addresss = '10431 SE 49th Court Apt 2 Belleview, FL 34420'
 
-phoneMessy = '(920)-7167-896'
+info = 'marthaballesteros@gmail.com 407-970-1439'
 
-phone = re.sub('[^A-Za-z0-9]+', '', phoneMessy)
+email = re.findall('\S+@\S+', info) 
 
-print(phone)
+ok = re.findall('\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4}|\(\d{3}\)\s*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4}', info)
+
+parser = Parser()
+adr = parser.parse(addresss)
+
+print(f'{adr.number.number} {adr.road.direction} {adr.road.name} {adr.road.suffix}')
+print(f'{adr.locality.zip}')
+print(f'{email}')
+print(f'{ok}')
