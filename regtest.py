@@ -1,8 +1,14 @@
 from address_parser import Parser
 import re
-addresss = '10431 SE 49th Court Apt 2 Belleview, FL 34420'
 
-info = 'marthaballesteros@gmail.com 407-970-1439'
+
+addresss = '387 View Ave apt4 Twin Falls, ID 83301'
+
+info = 'Email:  dmmmartinez@gmail.com Phone:  +1 (956) 8574114'
+
+
+
+
 
 email = re.findall('\S+@\S+', info) 
 
@@ -12,6 +18,6 @@ parser = Parser()
 adr = parser.parse(addresss)
 
 print(f'{adr.number.number} {adr.road.direction} {adr.road.name} {adr.road.suffix}')
-print(f'{adr.locality.zip}')
-print(f'{email}')
-print(f'{ok}')
+print(f'{adr.text}')
+print(f'{email[0]}')
+print(f'{ok[0]}')

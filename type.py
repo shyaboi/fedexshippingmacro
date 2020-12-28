@@ -54,7 +54,8 @@ pyautogui.write(phone)
 
 time.sleep(.7)
 
-for _ in range(26):
+#### **todo** 23 for ins for saturday 22 for weekday
+for _ in range(22):
     down()
 
 pyautogui.write(weight) 
@@ -69,8 +70,10 @@ down()
 pyautogui.press('up')
 pyautogui.press('up')
 
-down()
+
+###### **to do**, fix the changing of this based on time and day(weekends and after 2pm)
 # down()
+down()
 
 pyautogui.press('space')
 
@@ -174,6 +177,20 @@ pyautogui.hotkey('space')
 down()
 pyautogui.hotkey('space')
 down()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # for _ in range(20):
 #     down()
 
