@@ -14,7 +14,6 @@ email = 'email@email.com'
 
 
 
-
 phone = re.sub('[^A-Za-z0-9]+', '', phoneMessy)
 
 def down():
@@ -54,8 +53,9 @@ pyautogui.write(phone)
 
 time.sleep(.7)
 
-#### **todo** 23 for ins for saturday 22 for weekday
-for _ in range(22):
+#### **todo** 23 for ins for saturday 20/21/22 randomly on weekday, think it's based on the calander.
+#****todo**** #need to set date based on time and date of today ie weekends set for mon, and after 2 set to next day business day aware.
+for _ in range(20):
     down()
 
 pyautogui.write(weight) 
