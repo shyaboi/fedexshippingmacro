@@ -55,7 +55,7 @@ time.sleep(.7)
 
 #### **todo** 23 for ins for saturday 20/21/22 randomly on weekday, think it's based on the calander.
 #****todo**** #need to set date based on time and date of today ie weekends set for mon, and after 2 set to next day business day aware.
-for _ in range(20):
+for _ in range(27):
     down()
 
 pyautogui.write(weight) 
@@ -81,8 +81,11 @@ for _ in range(7):
     down()
 
 pyautogui.write(ticket)
+for _ in range(4):
+    down()
+pyautogui.write(email)
 
-for _ in range(7):
+for _ in range(3):
     down()
 pyautogui.hotkey('enter')
 
@@ -135,6 +138,7 @@ for _ in range(5):
 pyautogui.hotkey('enter')
 
 
+time.sleep(.6)
 
 down()
 
@@ -143,13 +147,16 @@ pyautogui.press('down')
 pyautogui.press('down')
 pyautogui.press('down')
 
+time.sleep(.6)
 
 
 for _ in range(12):
     down()
 
 pyautogui.write(ticket)
-
+for _ in range(5):
+    down()
+pyautogui.write(email)
 
 # for _ in range(8):
 #     down()
@@ -164,7 +171,7 @@ pyautogui.write(ticket)
 # pyautogui.press('down')
 # pyautogui.press('down')
 
-for _ in range(21):
+for _ in range(16):
     down()
 
 pyautogui.write(email)
