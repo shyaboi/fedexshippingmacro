@@ -113,7 +113,7 @@ pyautogui.hotkey('space')
 
 # for _ in range(14):
 #     down()
-
+# was auto working, now time to check for errors
 input("After going to the return label, click the 'weight' in fedex, then; Press Enter to continue...")
 pyautogui.hotkey('alt', 'tab')
 
