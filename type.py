@@ -42,7 +42,7 @@ down()
 
 # time.sleep(.4)
 # pyautogui.press('down')
-# time.sleep(.4)
+# time.sleep(.4)``
 # pyautogui.press('return')
 
 for _ in range(2):
